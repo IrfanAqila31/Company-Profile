@@ -1,108 +1,30 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeroSection from '@/components/HeroSection.vue'
+import StatsSection from '@/components/StatsSection.vue'
+
+const companyStats = [
+  {
+    value: '500+',
+    label: 'Happy Clients',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>',
+  },
+  {
+    value: '1200+',
+    label: 'Projects Delivered',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business-icon lucide-briefcase-business"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>',
+  },
+  { value: '10', label: 'Awards Won', icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy-icon lucide-trophy"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>' },
+  {
+    value: '20+',
+    label: 'Countries Served',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
+  },
+]
+</script>
 
 <template>
-  <section class="pt-20 relative w-full h-160 flex items-center bg-cover bg-center bg-no-repeat">
-    <img
-      src="https://images.unsplash.com/photo-1574958269340-fa927503f3dd?q=80&w=1048&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Gedung kantor pusat modern perusahaan"
-      class="absolute inset-0 w-full h-full object-cover object-[center_30%] -z-10"
-    />
-   <div class="absolute inset-0 bg-linear-to-r from-white/95 from-20% via-white/40 via-50% to-transparent to-60%" aria-hidden="true"></div>
-
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6">
-      <header class="max-w-2xl">
-        <h1
-          id="hero-heading"
-          class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-700 leading-tight mb-6"
-        >
-          Innovating Today <br />
-          <span class="text-teal-500">Inspiring Tomorrow</span>
-        </h1>
-        <p class="text-lg md:text-xl text-slate-800 mb-8 leading-relaxed">
-          We deliver intelligent solutions that drive growth, empower businesses, and create lasting
-          impact.
-        </p>
-
-        <nav aria-label="Hero navigation" class="flex flex-wrap items-center gap-4">
-          <RouterLink
-            to="/services"
-            class="px-8 py-3 bg-teal-500 hover:bg-opacity-90 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
-          >
-            Our Services
-          </RouterLink>
-          <button
-            type="button"
-            class="px-8 py-3 bg-slate-800/50 hover:bg-slate-700/40 backdrop-blur-sm text-white font-semibold border border-white/30 rounded-lg flex items-center gap-2 transition-all"
-          >
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            Watch Overview
-          </button>
-        </nav>
-      </header>
-    </div>
-  </section>
-  <section class="pt-20 relative w-full h-160 flex items-center bg-cover bg-center bg-no-repeat">
-    <img
-      src="https://images.unsplash.com/photo-1574958269340-fa927503f3dd?q=80&w=1048&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Gedung kantor pusat modern perusahaan"
-      class="absolute inset-0 w-full h-full object-cover object-[center_30%] -z-10"
-    />
-   <div class="absolute inset-0 bg-linear-to-r from-white/95 from-20% via-white/40 via-50% to-transparent to-60%" aria-hidden="true"></div>
-
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6">
-      <header class="max-w-2xl">
-        <h1
-          id="hero-heading"
-          class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-700 leading-tight mb-6"
-        >
-          Innovating Today <br />
-          <span class="text-teal-500">Inspiring Tomorrow</span>
-        </h1>
-        <p class="text-lg md:text-xl text-slate-800 mb-8 leading-relaxed">
-          We deliver intelligent solutions that drive growth, empower businesses, and create lasting
-          impact.
-        </p>
-
-        <nav aria-label="Hero navigation" class="flex flex-wrap items-center gap-4">
-          <RouterLink
-            to="/services"
-            class="px-8 py-3 bg-teal-500 hover:bg-opacity-90 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
-          >
-            Our Services
-          </RouterLink>
-          <button
-            type="button"
-            class="px-8 py-3 bg-slate-800/50 hover:bg-slate-700/40 backdrop-blur-sm text-white font-semibold border border-white/30 rounded-lg flex items-center gap-2 transition-all"
-          >
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            Watch Overview
-          </button>
-        </nav>
-      </header>
-    </div>
-  </section>
+  <main>
+    <HeroSection />
+    <StatsSection :stats="companyStats" />
+  </main>
 </template>

@@ -28,7 +28,7 @@ onUnmounted(() => {
   >
     <nav
       aria-label="Navigasi Utama"
-      class="w-full max-w-7xl px-6 py-3 md:py-4 flex items-center justify-between"
+      class="w-full max-w-7xl px-4 py-3 md:py-4 flex items-center justify-between"
     >
       <a
         href="#"
@@ -131,7 +131,7 @@ onUnmounted(() => {
         <RouterLink
           to="/about-us"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300 shadow hover:shadow-lg"
+          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
         >
           About Us
         </RouterLink>
