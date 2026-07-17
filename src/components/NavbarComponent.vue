@@ -22,8 +22,8 @@ onUnmounted(() => {
     :class="[
       'fixed w-full z-50 flex justify-center transition-all duration-300',
       isScrolled
-        ? 'bg-white/80 backdrop-blur-md border-b border-slate-800/10 shadow-sm py-1'
-        : 'bg-transparent border-transparent',
+        ? 'bg-white border-b border-slate-800/10 shadow-sm py-1 text-slate-800'
+        : 'bg-transparent border-transparent text-slate-50',
     ]"
   >
     <nav
@@ -32,57 +32,57 @@ onUnmounted(() => {
     >
       <a
         href="#"
-        class="uppercase text-lg md:text-xl font-bold text-slate-800"
-        aria-label="Logo Mahreen"
+        class="uppercase text-lg md:text-xl font-bold"
+        aria-label="Logo Omega"
         >omega</a
       >
       <div class="hidden lg:flex items-center space-x-8">
         <RouterLink
           to="/"
-          class="text-sm font-bold text-slate-800 hover:text-violet-200 transition-colors"
+          class="text-sm font-bold hover:text-teal-500 transition-colors"
           >Home</RouterLink
         >
         <RouterLink
           to="/about-us"
-          class="text-sm font-bold text-slate-800 hover:text-violet-200 transition-colors"
+          class="text-sm font-bold hover:text-teal-500 transition-colors"
           >About Us</RouterLink
         >
         <RouterLink
           to="/services"
-          class="text-sm font-bold text-slate-800 hover:text-violet-200 transition-colors"
+          class="text-sm font-bold hover:text-teal-500 transition-colors"
           >Services</RouterLink
         >
         <RouterLink
           to="/industries"
-          class="text-sm font-bold text-slate-800 hover:text-violet-200 transition-colors"
+          class="text-sm font-bold hover:text-teal-500 transition-colors"
           >Industries</RouterLink
         >
         <RouterLink
           to="/insight"
-          class="text-sm font-bold text-slate-800 hover:text-violet-200 transition-colors"
+          class="text-sm font-bold hover:text-teal-500 transition-colors"
           >Insight</RouterLink
         >
 
         <RouterLink
           to="/careers"
-          class="text-sm font-bold text-slate-800 hover:text-violet-200 transition-colors"
+          class="text-sm font-bold hover:text-teal-500 transition-colors"
           >Careers</RouterLink
         >
         <RouterLink
           to="/contact-us"
-          class="text-sm font-bold text-slate-800 hover:text-violet-200 transition-colors"
+          class="text-sm font-bold hover:text-teal-500 transition-colors"
           >Contact Us</RouterLink
         >
         <RouterLink
           to="/contact-us"
-          class="text-sm font-bold text-slate-50 px-4 py-2 bg-teal-500 hover:bg-teal-600 transition duration-300 rounded-lg cursor-pointer ml-4"
+          class="text-sm font-bold px-4 py-2 text-white bg-teal-500 hover:bg-teal-600 transition duration-300 rounded-lg cursor-pointer ml-4"
           >Get in Touch</RouterLink
         >
       </div>
 
       <button
         @click="isMobileMenuOpen = !isMobileMenuOpen"
-        class="lg:hidden text-slate-900 hover:text-slate-900 focus:outline-none relative w-9 h-9 flex items-center justify-center"
+        class="lg:hidden focus:outline-none relative w-9 h-9 flex items-center justify-center"
         aria-label="Buka Menu Utama"
       >
         <Transition name="rotate-fade">
@@ -119,60 +119,60 @@ onUnmounted(() => {
     <transition name="slide-down">
       <div
         v-show="isMobileMenuOpen"
-        class="absolute top-16 left-4 right-4 bg-slate-100/50 backdrop-blur-md border border-white/10 rounded-3xl shadow-xl p-5 lg:hidden flex flex-col space-y-2"
+        class="absolute top-16 left-0 right-0 bg-white border border-slate-100 shadow-xl p-5 lg:hidden flex flex-col space-y-2"
       >
         <RouterLink
           to="/"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
+          class="text-base font-medium text-slate-900 hover:text-teal-500 p-3 rounded-lg transition duration-300"
         >
           Home
         </RouterLink>
         <RouterLink
           to="/about-us"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
+          class="text-base font-medium text-slate-900 hover:text-teal-500 p-3 rounded-lg transition duration-300"
         >
           About Us
         </RouterLink>
         <RouterLink
           to="/services"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
+          class="text-base font-medium text-slate-900 hover:text-teal-500 p-3 rounded-lg transition duration-300"
         >
           Services
         </RouterLink>
         <RouterLink
           to="/industries"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
+          class="text-base font-medium text-slate-900 hover:text-teal-500 p-3 rounded-lg transition duration-300"
         >
           Industries
         </RouterLink>
         <RouterLink
           to="/insight"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
+          class="text-base font-medium text-slate-900 hover:text-teal-500 p-3 rounded-lg transition duration-300"
         >
           Insight
         </RouterLink>
         <RouterLink
           to="/careers"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
+          class="text-base font-medium text-slate-900 hover:text-teal-500 p-3 rounded-lg transition duration-300"
         >
           Careers
         </RouterLink>
         <RouterLink
           to="/contact-us"
           @click="isMobileMenuOpen = false"
-          class="text-base font-medium text-slate-900 hover:text-sky-500 p-3 rounded-lg transition duration-300"
+          class="text-base font-medium text-slate-900 hover:text-teal-500 p-3 rounded-lg transition duration-300"
         >
           Contact Us
         </RouterLink>
         <RouterLink
           to="/contact-us"
-          class="text-sm font-bold text-slate-50 px-4 py-3 w-fit bg-sky-500 hover:bg-sky-600 transition duration-300 rounded-lg cursor-pointer"
+          class="text-sm font-bold text-slate-50 px-4 py-3 w-fit bg-teal-500 hover:bg-teal-600 transition duration-300 rounded-lg cursor-pointer"
           >Get in Touch</RouterLink
         >
       </div>

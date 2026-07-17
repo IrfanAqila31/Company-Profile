@@ -3,9 +3,9 @@
 <template>
   <section class="pt-15 relative w-full h-160 flex items-center bg-cover bg-center bg-no-repeat">
     <img
-      src="https://images.unsplash.com/photo-1574958269340-fa927503f3dd?q=80&w=1048&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       alt="Gedung kantor pusat modern perusahaan"
-      class="absolute inset-0 w-full h-full object-cover object-[center_30%] -z-10"
+      class="absolute inset-0 w-full h-full object-cover object-center -z-10"
     />
 <div class="absolute inset-0 bg-slate-900/40" aria-hidden="true"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6">
