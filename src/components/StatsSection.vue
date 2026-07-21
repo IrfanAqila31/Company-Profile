@@ -15,7 +15,7 @@ defineProps<{
 <template>
   <section
     aria-label="Company Statistic"
-    class="relative z-20 max-w-7xl mx-auto px-4 -mt-15 md:-mt-13 mb-24"
+    class="relative z-20 max-w-7xl mx-auto px-4 -mt-17 md:-mt-13 mb-24"
   >
     <div
       class="bg-white rounded-xl shadow-xl shadow-slate-200/50 border border-slate-100 py-6 px-4 md:px-8"

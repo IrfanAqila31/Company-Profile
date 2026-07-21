@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeroSection from '@/components/HeroSection.vue'
 import StatsSection from '@/components/StatsSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
 
 const companyStats = [
   {
@@ -26,5 +27,6 @@ const companyStats = [
   <main>
     <HeroSection />
     <StatsSection :stats="companyStats" />
+    <AboutSection />
   </main>
 </template>

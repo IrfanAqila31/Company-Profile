@@ -8,16 +8,16 @@
       class="absolute inset-0 w-full h-full object-cover object-center -z-10"
     />
 <div class="absolute inset-0 bg-slate-900/40" aria-hidden="true"></div>
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-6">
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-4">
       <header class="max-w-2xl drop-shadow-lg">
         <h1
           id="hero-heading"
-          class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-50 leading-tight mb-6"
+          class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-50 leading-tight mb-4"
         >
           Innovating Today <br />
           <span class="text-teal-300">Inspiring Tomorrow</span>
         </h1>
-        <p class="text-base md:text-lg text-slate-100 mb-8 leading-relaxed max-w-xl">
+        <p class="text-base md:text-lg text-slate-100 mb-5 leading-relaxed max-w-xl">
           We deliver intelligent solutions that drive growth, empower businesses, and create lasting
           impact.
         </p>
